@@ -1,0 +1,41 @@
+header{
+    background-image: url(https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg);
+    background-size:contain;
+    font-family: Helvetica;
+    font-size: 100px;
+    font-weight: bold;
+    color: #0AE80D;
+    text-align: center;
+    border:white solid 1px;
+  
+  }
+  
+  body{
+    background-color: rgba(115, 116, 117, 0.863);
+  }
+  
+  .language{
+    border: white solid 1px;
+    margin: 5px 5px auto;
+  }
+  
+  h1{
+    margin: auto;
+  }
+  
+  .image-file{
+    line-height: 1.7;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  
+  .language-tree{
+    border: white solid 1px;
+    margin: 5px;
+  }
+  
+  .section{
+    border: white solid 1px;
+    margin: 5px;
+  }
+  
