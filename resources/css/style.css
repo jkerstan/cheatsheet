@@ -56,14 +56,14 @@ body{
   
 .language-tree{
     border: white solid 2px;
-    margin: 5px auto;
+    margin: 10px auto;
     padding: 0px 10px 5px 5px;
   }
   
 .section{
     border: white solid 1px;
-    margin: 5px;
-    padding: 10px;
+    margin: 5px auto;
+    padding: 3px 10px;
   }
   code{
     background-color: azure;
