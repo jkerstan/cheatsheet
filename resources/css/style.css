@@ -56,7 +56,7 @@ body{
   
 .language-tree{
     border: white solid 2px;
-    margin: 5px;
+    margin: 5px auto;
     padding: 0px 10px 5px 5px;
   }
   
