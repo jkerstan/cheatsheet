@@ -1,26 +1,29 @@
 header{
     background-image: url(https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg);
     background-size:contain;
-    font-family: Helvetica;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100px;
     font-weight: bold;
     color: #0AE80D;
     text-align: center;
     border:rgb(54, 54, 54) solid 1px;
+    width: auto;
   
   }
   
 body{
   background-color: rgba(78, 52, 4, 0.63);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
   
 .language{
     border:rgb(197, 197, 197) solid 3px;
-    margin: 40px auto;
-    padding-top: 5px;
-    padding-left: 5px;
-    position: relative;
-    width: 100%;
+    margin: 10px auto;
+    padding: 5px 10px;
+    width: auto;
+  }
+  h2{
+    padding: 5px 10px;
   }
 
 #html{
@@ -62,4 +65,6 @@ body{
     margin: 5px;
     padding: 10px;
   }
-  
+  code{
+    background-color: azure;
+  }
