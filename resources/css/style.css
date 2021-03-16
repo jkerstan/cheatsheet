@@ -3,16 +3,15 @@
 }
 
 header{
-    background-image: url(https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg);
-    background-size:cover;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 40px;
     font-weight: bold;
-    color: #0AE80D;
+    color: #c4c4c4;
     text-align: center;
     border:rgb(54, 54, 54) solid 1px;
     height: 270px;
     width: auto;
+    background-color:#2d545e;
   }
 
 nav a{
@@ -34,7 +33,7 @@ nav li{
 }
   
 body{
-  background-color: rgba(78, 52, 4, 0.63);
+  background-color: #c89666;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
   
@@ -96,4 +95,33 @@ body{
 
   a{
     color:rgb(61, 22, 233);
+  }
+
+  footer ul{
+    list-style-type: none;
+  }
+
+  .color-template{
+    border: white solid 1px;
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 5px;
+    margin: auto 10px;
+  }
+
+  #sand-tan{
+    background-color: #e1b382;
+  }
+  #sand-tan-shadow{
+    background-color: #c89666;
+  }
+  #night-blue{
+    background-color: #2d545e;
+  }
+  #night-blue-shadow{
+    background-color: #12343b;
   }
