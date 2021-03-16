@@ -107,7 +107,27 @@
     </ul>
     <!--Display-->
     <h3>Display</h3>
+      <!--z-index-->
     <p><code>z-index</code> will change what layer the element is on the HTML's "depth". It just uses integers for each layer.</p>
+      <!--display-->
+    <p><code>display</code> - three important options:
+      <ul>
+        <li><code>inline</code> - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements" target="_blank">Documentation found here.</a> Inline elements have a box that wraps tightly around their content, only taking up the amount of space necessary to display their content and not requiring a new line after each element. The height and width of these elements cannot be specified in the CSS document. <code>display</code> can make any element an inline element.</li>
+        <li><code>block</code> - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">Documentation found here.</a>These elements fill the entire width of the page by default, but their width property can also be set. Unless otherwise specified, they are the height necessary to accommodate their content.  By default, (<code>h1</code> through <code>h6</code>), <code>p</code>, <code>div</code>, and <code>footer</code> are block elements.</li>
+        <li><code>inline-block</code> - Inline-block display combines features of both inline and block elements. Inline-block elements can appear next to each other and we can specify their dimensions using the width and height properties. Images are the best example of default inline-block elements.</li>
+      </ul>
+    </p>
+      <!--float-->
+    <p><code>float</code> - will move an element as far to the right or left as possible. Floated elements must have a width specified.</p>
+      <!--clear-->
+    <p><code>clear</code> - specifies how elements should behave when they bump into each other on the page. It can take on one of the following values:
+      <ul>
+        <li><code>left</code> - the left side of the element will not touch any other element within the same containing element.</li>
+        <li><code>right</code> - the right side of the element will not touch any other element within the same containing element.</li>
+        <li><code>both</code> - neither side of the element will touch any other element within the same containing element.</li>
+        <li><code>none</code> - the element can touch either side.</li>
+      </ul>
+    </p>
   </div>
  </div>
  <!--Javascript-->
