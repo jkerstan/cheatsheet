@@ -28,9 +28,9 @@ nav li{
   padding: 5px 10px;
   border: solid 1px rgb(255, 255, 255);
   border-radius: 3%;
-  margin:0 auto;
-  
+  margin:0px 5px;
   font-size: 30px;
+  width: 300px;
 }
   
 body{
