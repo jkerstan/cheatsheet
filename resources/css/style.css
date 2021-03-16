@@ -1,9 +1,9 @@
 *{
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 40px;
     font-weight: bold;
     color: #2d545e;
@@ -19,7 +19,7 @@ nav ul{
   list-style-type: none;
 }
 
-nav li{
+nav button{
   display: inline-block;
   background-color: #e1b382;
   padding: 5px 10px;
@@ -31,7 +31,6 @@ nav li{
   
 body{
   background-color: #c89666;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
   color:#12343b;
 }
   
@@ -91,7 +90,6 @@ body{
     display: inline-block;
     width: 300px;
     height: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     text-align: center;
     padding: 10px 5px;
