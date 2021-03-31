@@ -80,92 +80,135 @@
    </div>
    <!--Box-Model-->
    <div class="language-tree" id="box-model">
-    <h2>The Box Model</h2>
-    <div id=image>
-      <img src="/Users/jacobkerstan/Desktop/DevProject/Images/diagram-boxmodel_Updated_1-01.svg">
-   </div>
+      <h2>The Box Model</h2>
+      <div id=image>
+        <img src="/Users/jacobkerstan/Desktop/DevProject/Images/diagram-boxmodel_Updated_1-01.svg">
+      </div>
      <!--Padding-->
-    <h3>Padding</h3>
-    <p>Padding is the space between the content of the box and the borders of a box.</p>
-    <p><code>padding: 5px 10px 5px 10px;</code> will specify padding in a clockwise rotation, starting at the top.  So 5px is top, 10px is right, 5px is bottom, 10px is left. This can also be shortened to <code>padding: 5px 10px;</code></p>
-    <!--Borders-->
-    <h3>Border</h3>
-    <p>Borders can have specific <code>width</code>, <code>style</code>, and <code>color</code>.</p>
-    <ul>
-      <li><code>width</code> - The thickness of the border. A border’s thickness can be set in pixels or with one of the following keywords: <code>thin</code>, <code>medium</code>, or <code>thick</code>.</li>
-      <li><code>style</code> - The design of the border. Web browsers can render any of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style#values" target="_blank">10 different styles.</a></li>
-      <li><code>style</code> - The color of the border</li>
-    </ul>
-    <!--Margin-->
-    <h3>Margin</h3>
-    <p>Margin refers to the space directly outside of the box.  The way it's written for each side is the same as how padding works. <br><code>margin: 0 auto;</code> will set the top and bottom to 0px and center the div in the containing element.</p>
-    <p>Vertical margins (top and bottom) collapse.  The larger of the two vertical margins sets the distance between adjacent elements.</p>
-    <!--Minimum and Maximum Height and Width-->
-    <h3>Minimum and Maximum Height and Width</h3>
-    <ol>
-      <li><code>min-width</code> — this property ensures a minimum width of an element’s box.</li>
-      <li><code>max-width</code> — this property ensures a maximum width of an element’s box.</li>
-      <li><code>min-height</code> — this property ensures a minimum height for an element’s box.</li>
-      <li><code>max-height</code> — this property ensures a maximum height for an element’s box.</li>
-    </ol>
-    <!--Overflow-->
-    <h3>Overflow</h3>
-    <p>The <code>overflow</code> property controls what happens to content that spills, or overflows, outside its box. It can be set to one of the following values:</p>
-    <ul>
-      <li><code>hidden</code> - when set to this value, any content that overflows will be hidden from view.</li>
-      <li><code>scroll</code> - when set to this value, a scrollbar will be added to the element’s box so that the rest of the content can be viewed by scrolling.</li>
-      <li><code>visible</code> - when set to this value, the overflow content will be displayed outside of the containing element. Note, this is the default value.</li>
-    </ul>
-    <!--Position-->
-    <h3>Position</h3>
-    <p>The <code>position</code> property can use one of 4 values:</p>
-    <ul>
-      <li><code>static</code> (default value)</li>
-      <li><code>relative</code> - This value allows you to position an element relative to its default static position on the web page using offset properties: (<code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>). Basically the same thing as <code>static</code>, but lets you offset the element.</li>
-      <li><code>absolute</code> - When an element’s position is set to absolute all other elements on the page will ignore the element and act like it is not present on the page. The element will be positioned relative to its closest positioned parent element.  This option also utilizes <code>offset</code>. Really good to note that if you want to position something absolute inside a parent element, the parent element needs to be something other than static, like relative or absolute.</li>
-      <li><code>fixed</code> - It will fix the element to the entire HTML element, not parent element.  It will also stay in the same place when you scroll.</li>
-    </ul>
-    <!--Display-->
-    <h3>Display</h3>
+      <h3>Padding</h3>
+      <p>Padding is the space between the content of the box and the borders of a box.</p>
+      <p><code>padding: 5px 10px 5px 10px;</code> will specify padding in a clockwise rotation, starting at the top.  So 5px is top, 10px is right, 5px is bottom, 10px is left. This can also be shortened to <code>padding: 5px 10px;</code></p>
+      <!--Borders-->
+      <h3>Border</h3>
+      <p>Borders can have specific <code>width</code>, <code>style</code>, and <code>color</code>.</p>
+      <ul>
+        <li><code>width</code> - The thickness of the border. A border’s thickness can be set in pixels or with one of the following keywords: <code>thin</code>, <code>medium</code>, or <code>thick</code>.</li>
+        <li><code>style</code> - The design of the border. Web browsers can render any of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style#values" target="_blank">10 different styles.</a></li>
+        <li><code>style</code> - The color of the border</li>
+      </ul>
+      <!--Margin-->
+      <h3>Margin</h3>
+      <p>Margin refers to the space directly outside of the box.  The way it's written for each side is the same as how padding works. <br><code>margin: 0 auto;</code> will set the top and bottom to 0px and center the div in the containing element.</p>
+      <p>Vertical margins (top and bottom) collapse.  The larger of the two vertical margins sets the distance between adjacent elements.</p>
+      <!--Minimum and Maximum Height and Width-->
+      <h3>Minimum and Maximum Height and Width</h3>
+      <ol>
+        <li><code>min-width</code> — this property ensures a minimum width of an element’s box.</li>
+        <li><code>max-width</code> — this property ensures a maximum width of an element’s box.</li>
+        <li><code>min-height</code> — this property ensures a minimum height for an element’s box.</li>
+        <li><code>max-height</code> — this property ensures a maximum height for an element’s box.</li>
+      </ol>
+      <!--Overflow-->
+      <h3>Overflow</h3>
+      <p>The <code>overflow</code> property controls what happens to content that spills, or overflows, outside its box. It can be set to one of the following values:</p>
+      <ul>
+        <li><code>hidden</code> - when set to this value, any content that overflows will be hidden from view.</li>
+        <li><code>scroll</code> - when set to this value, a scrollbar will be added to the element’s box so that the rest of the content can be viewed by scrolling.</li>
+        <li><code>visible</code> - when set to this value, the overflow content will be displayed outside of the containing element. Note, this is the default value.</li>
+      </ul>
+      <!--Position-->
+      <h3>Position</h3>
+      <p>The <code>position</code> property can use one of 4 values:</p>
+      <ul>
+        <li><code>static</code> (default value)</li>
+        <li><code>relative</code> - This value allows you to position an element relative to its default static position on the web page using offset properties: (<code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>). Basically the same thing as <code>static</code>, but lets you offset the element.</li>
+        <li><code>absolute</code> - When an element’s position is set to absolute all other elements on the page will ignore the element and act like it is not present on the page. The element will be positioned relative to its closest positioned parent element.  This option also utilizes <code>offset</code>. Really good to note that if you want to position something absolute inside a parent element, the parent element needs to be something other than static, like relative or absolute.</li>
+       <li><code>fixed</code> - It will fix the element to the entire HTML element, not parent element.  It will also stay in the same place when you scroll.</li>
+      </ul>
+      <!--Display-->
+      <h3>Display</h3>
       <!--z-index-->
-    <p><code>z-index</code> will change what layer the element is on the HTML's "depth". It just uses integers for each layer.</p>
+      <p><code>z-index</code> will change what layer the element is on the HTML's "depth". It just uses integers for each layer.</p>
       <!--display-->
-    <p><code>display</code> - three important options:
-      <ul>
-        <li><code>inline</code> - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements" target="_blank">Documentation found here.</a> Inline elements have a box that wraps tightly around their content, only taking up the amount of space necessary to display their content and not requiring a new line after each element. The height and width of these elements cannot be specified in the CSS document. <code>display</code> can make any element an inline element.</li>
-        <li><code>block</code> - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">Documentation found here.</a>These elements fill the entire width of the page by default, but their width property can also be set. Unless otherwise specified, they are the height necessary to accommodate their content.  By default, (<code>h1</code> through <code>h6</code>), <code>p</code>, <code>div</code>, and <code>footer</code> are block elements.</li>
-        <li><code>inline-block</code> - Inline-block display combines features of both inline and block elements. Inline-block elements can appear next to each other and we can specify their dimensions using the width and height properties. Images are the best example of default inline-block elements.</li>
-      </ul>
-    </p>
+      <p><code>display</code> - three important options:
+        <ul>
+          <li><code>inline</code> - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements" target="_blank">Documentation found here.</a> Inline elements have a box that wraps tightly around their content, only taking up the amount of space necessary to display their content and not requiring a new line after each element. The height and width of these elements cannot be specified in the CSS document. <code>display</code> can make any element an inline element.</li>
+          <li><code>block</code> - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">Documentation found here.</a>These elements fill the entire width of the page by default, but their width property can also be set. Unless otherwise specified, they are the height necessary to accommodate their content.  By default, (<code>h1</code> through <code>h6</code>), <code>p</code>, <code>div</code>, and <code>footer</code> are block elements.</li>
+          <li><code>inline-block</code> - Inline-block display combines features of both inline and block elements. Inline-block elements can appear next to each other and we can specify their dimensions using the width and height properties. Images are the best example of default inline-block elements.</li>
+       </ul>
+      </p>
       <!--float-->
-    <p><code>float</code> - will move an element as far to the right or left as possible. Floated elements must have a width specified.</p>
+     <p><code>float</code> - will move an element as far to the right or left as possible. Floated elements must have a width specified.</p>
       <!--clear-->
-    <p><code>clear</code> - specifies how elements should behave when they bump into each other on the page. It can take on one of the following values:
-      <ul>
-        <li><code>left</code> - the left side of the element will not touch any other element within the same containing element.</li>
-        <li><code>right</code> - the right side of the element will not touch any other element within the same containing element.</li>
-        <li><code>both</code> - neither side of the element will touch any other element within the same containing element.</li>
-        <li><code>none</code> - the element can touch either side.</li>
+     <p><code>clear</code> - specifies how elements should behave when they bump into each other on the page. It can take on one of the following values:
+        <ul>
+          <li><code>left</code> - the left side of the element will not touch any other element within the same containing element.</li>
+          <li><code>right</code> - the right side of the element will not touch any other element within the same containing element.</li>
+          <li><code>both</code> - neither side of the element will touch any other element within the same containing element.</li>
+         <li><code>none</code> - the element can touch either side.</li>
       </ul>
-    </p>
-    <!--Scaling images and videos-->
-    <h3>Scaling images and videos:</h3>
-    <div id="image">
-      <img src="/Users/jacobkerstan/jkerstan.github.io/cheatsheet/resources/images/Scaling_Code.png">
-    </div>
-    <!--Responsive Design-->
-    <h3>Responsive Design</h3>
-    <!--Media Queries-->
-    <h4>Media Queries</h4>
-    <p>With media queries, CSS can detect the size of the current screen and apply different CSS styles depending on the width of the screen. <br> Typical code starts out: <br><code>@media only screen and (min/max rule)<br>{/* CSS ruleset */}</code></p>
-    <p>For when you need an "or" statement, the media query would look like this: <br> <code>@media only screen and (min-width: 480px), (orientation: landscape) <br>{
+      </p>
+     <!--Scaling images and videos-->
+      <h3>Scaling images and videos:</h3>
+      <div id="image">
+        <img src="/Users/jacobkerstan/jkerstan.github.io/cheatsheet/resources/images/Scaling_Code.png">
+      </div>
+      <!--Responsive Design-->
+     <h3>Responsive Design</h3>
+     <!--Media Queries-->
+     <h4>Media Queries</h4>
+     <p>With media queries, CSS can detect the size of the current screen and apply different CSS styles depending on the width of the screen. <br> Typical code starts out: <br><code>@media only screen and (min/max rule)<br>{/* CSS ruleset */}</code></p>
+     <p>For when you need an "or" statement, the media query would look like this: <br> <code>@media only screen and (min-width: 480px), (orientation: landscape) <br>{
       /* CSS ruleset */}</code></p>
-    <p><a href="https://content.codecademy.com/courses/freelance-1/unit-5/screen-sizes.png" target="_blank">Common breakpoints for devices.</a></p>
-    <!--Responsive Font-->
-    <h3>Responsive Font</h3>
-    <p>An <code>em</code> sizes relevant to the current element's font-size or inherited base font-size, whereas <code>rem</code> sizes relative to the root element's font-size.</p>
+     <p><a href="https://content.codecademy.com/courses/freelance-1/unit-5/screen-sizes.png" target="_blank">Common breakpoints for devices.</a></p>
+     <!--Responsive Font-->
+     <h3>Responsive Font</h3>
+     <p>An <code>em</code> sizes relevant to the current element's font-size or inherited base font-size, whereas <code>rem</code> sizes relative to the root element's font-size.</p>
+     <!--Flexbox-->
+     <h3>Flexbox</h3>
+     <p>Flex Container: an element on a page that contains flex items. <br> Flex Items: direct child elements of a flex container.  These will change size and location in response to the size and position of their parent container.</p>
+     <h4>Flex Containers</h4>
+     <p>Set <code>display</code> to <code>flex</code> or <code>inline-flex</code>.</p>
+     <p>For any element to become a flex container, it must be set to <code>display:flex;</code>.  Flex containers are block level, unless assigned <code>display:inline-flex;</code>.</p>
+     <p>A parent item's width will override the flex child's width.  If the parent container is too small, the child will shrink.</p>
+     <h5>Flex Container Properties</h5>
+     <p><code>justify-content</code>(left to right):</p>
+     <ul>
+       <li><code>flex-start</code> — all items will be positioned in order, starting from the left of the parent container, with no extra space between or before them.</li>
+       <li><code>flex-end</code> — all items will be positioned in order, with the last item starting on the right side of the parent container, with no extra space between or after them.</li>
+       <li><code>center</code> — all items will be positioned in order, in the center of the parent container with no extra space before, between, or after them.</li>
+       <li><code>space-around</code> — items will be positioned with equal space before and after each item, resulting in double the space between elements.</li>
+       <li><code>space-between</code> — items will be positioned with equal space between them, but no extra space before the first or after the last elements.</li>
+     </ul>
+     <p><code>align-items</code>(vertically):</p>
+     <ul>
+       <li><code>flex-start</code> — all elements will be positioned at the top of the parent container.</li>
+       <li><code>flex-end</code> - all elements will be positioned at the bottom of the parent container.</li>
+       <li><code>center</code> — the center of all elements will be positioned halfway between the top and bottom of the parent container.</li>
+       <li><code>baseline</code> — the bottom of the content of all items will be aligned with each other.</li>
+       <li><code>stretch</code> — if possible, the items will stretch from top to bottom of the container (this is the default value; elements with a specified height will not stretch; elements with a minimum height or no height specified will stretch).</li>
+    </ul>
+     <p><code>flex-wrap</code> - moves flex items to the next line if needed.  It has 3 values:</p>
+      <ul>
+        <li><code>wrap</code> — child elements of a flex container that don’t fit into a row will move down to the next line</li>
+        <li><code>wrap-reverse</code> — the same functionality as wrap, but the order of rows within a flex container is reversed (for example, in a 2-row flexbox, the first row from a wrap container will become the second in wrap-reverse and the second row from the wrap container will become the first in wrap-reverse)</li>
+        <li><code>nowrap</code> — prevents items from wrapping; this is the default value and is only necessary to override a wrap value set by a different CSS rule.</li>
+      </ul>
+     <p><code>align-content</code> - this will align the elements within the container when a row wraps.</p>
+     <p><code>flex-direction</code> - change the direction of the elements in the flex container.  Can take 4 values:</p>
+     <ul>
+       <li><code>row</code></li>
+       <li><code>row-reverse</code></li>
+       <li><code>column</code></li>
+       <li><code>row-reverse</code></li>
+     </ul>
+      <h5>Flex Item Properties</h5>
+     <p><code>flex-grow</code> - grows item/s to fill container.  Written for example: <code>flex-grow:1;</code></p>
+     <p><code>flex-shrink</code> - opposite of flex-grow  Written for example: <code>flex-shrink:1;</code></p> 
+     <p><code>flex-basis</code> - way to set the width of an item before it shrinks or stretches.</p>
+     <p><code>flex</code> - flex is a way to set the grow, shrink, and basis (in that order) all in one step.  For example: <code>flex: 2 1 150px;</code></p>
+    </div>
   </div>
- </div>
  <!--Javascript-->
  <div class="language" id="javascript">
   <h1>Javascript</h1>
